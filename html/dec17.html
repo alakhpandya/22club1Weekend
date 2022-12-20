@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Two types of tags in html -->
+    <!--  
+        in-line tags/elements: input, a, label, img
+        block tags/elements: li, p, h1, h2.. h6
+    -->
+    <!--     
+    <li>Abcd</li>Pqrs
+    <input>
+    <label for="">Some label</label>
+    <img src="/photos/pexels-laptop.jpg" width="100px" alt="">
+    <a href="#">Click</a>
+    
+    <br>
+    A<p>something</p>B
+     -->
+
+    <!-- <form method="post"> -->
+    <!-- <form method="get">     default -->
+    <form>
+        <div>
+            <label for="">First Name: </label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Last Name: </label>
+            <input type="text">
+        </div>
+        <div>
+            Select color for your T-shirt: <input type="color" name="color" id="">
+        </div>
+        <br>
+        <div>
+            Date of Departure: <input type="date" name="" id=""> <br>
+            Month & Year of Passing: <input type="month" name="" id=""> <br>
+            Duration of Stay: <input type="week" name="" id=""> <br>
+            Arrival Time: <input type="time" name="" id=""> <br>
+            Date & Time: <input type="datetime-local" name="" id="">
+            <input type="datetime" name="" id="">
+        </div> <br>
+        <div>
+            Upload your photo: <input type="file" name="" id="">
+        </div>
+        <div>
+            <input type="password" name="pwd" id="" placeholder="Password">
+        </div>
+        <div>
+            <p>How did you come to know about us?</p>
+            <ul type="none">
+                <li><input type="checkbox" name="" id="np"> <label for="np">News papers</label></li>
+                <li><input type="checkbox" name="" id="ref"> <label for="ref">Reference</label></li>
+                <li><input type="checkbox" name="" id="fb"> <label for="fb">Facebook</label></li>
+                <li><input type="checkbox" name="" id="seminar"> <label for="seminar">Live Seminars</label></li>
+                <li><input type="checkbox" name="" id="other" onclick="document.getElementById('hidden').setAttribute('type', 'text')"> <label for="other">Other</label> <input id="hidden" type="hidden" placeholder="Please Mention..." name=""></li>
+            </ul>
+        </div>
+
+        <div>
+            <input type="checkbox" name="tnc" id="tnc" required>
+            <label for="tnc">I agree to the terms of use & privacy policy.</label>
+        </div>
+        <div>
+            <input type="checkbox" name="consent" checked id="whatsapp">
+            <label for="whatsapp">Send me offers & other updates through whatsapp.</label>
+        </div>
+        <div>
+            <input type="submit">
+            <input type="button" value="Nothing">
+            <input type="reset" value="Clear All">
+        </div>
+        
+    </form>
+</body>
+</html>
+<!-- Next Class: input type image, number, radio, range, search, tel, url, form tags other than inputs -->
