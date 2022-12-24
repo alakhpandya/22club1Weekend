@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <div>
+            <input type="image" name="img" width="500px" src="/photos/universe-pixabay.jpg" alt="">
+        </div>
+        <input type="search" name="query" placeholder="Search..." id="">
+        <input type="submit" value="?">
+    </form> -->
+    <form action="">
+        <div>
+            Number of rooms: <input min="1" max="6" type="number" name="" id="">
+        </div>
+        <div>
+            <!-- <input type="tel" name="mobile" placeholder="9876543210" readonly id=""> -->
+            <input type="tel" name="mobile" value="9876543210" readonly id="">
+        </div>
+        <div>
+            <p>Select your semister:</p>
+            <input type="radio" name="semister" id="sem1" autofocus> <label for="sem1">Semister-1</label>
+            <input type="radio" name="semister" id="sem2"> <label for="sem2">Semister-2</label>
+            <input type="radio" name="semister" id="sem3"> <label for="sem3">Semister-3</label>
+            <input type="radio" name="semister" id="sem4"> <label for="sem4">Semister-4</label>
+        </div> 
+        <div>
+            <p>Choose mode of payment:</p>
+            <input type="radio" name="payment" id="cash"> <label for="cash">Cash</label>
+            <input type="radio" name="payment" id="upi"> <label for="upi">UPI</label>
+            <input type="radio" name="payment" id="card"> <label for="card">Credit/Debit Card</label>
+            <input type="radio" name="payment" id="netbanking"> <label for="netbanking">Netbanking</label>
+        </div>
+        <div>
+            <p>Select your budget for pg:</p>
+            <!-- 7000 <input min="7000" max="15000" value="9500" type="range" name="budget" id=""> 15000 -->
+
+            7000 <input type="range" step="500" value="9000" min="7000" max="15000" oninput="this.nextElementSibling.value = this.value">
+            <output>9000</output>
+        </div>
+        <div>
+            <input type="url" name="" placeholder="Your website" id="">
+        </div>
+        <div>
+            <p>Type your query below in maximum 100 characters:</p>
+            <textarea name="query" id="" cols="30" rows="5" maxlength="100"></textarea>
+            <!-- <textarea wrap="hard" name="query" id="" cols="30" rows="5" maxlength="100"></textarea> -->
+            <!-- <textarea wrap="soft" name="query" id="" cols="30" rows="5" maxlength="100"></textarea> -->
+        </div>
+        <div>
+            <select name="country" id="">
+                <option value="61">Australlia</option>
+                <option value="1">Canada</option>
+                <option value="91" selected>India</option>
+                <option value="44">UK</option>
+                <option value="1">US</option>
+                <optgroup label="Other Countries">
+                    <option value="">Brazil</option>
+                    <option value="">Chile</option>
+                    <option value="">Denmark</option>
+                    <option value="">Estonia</option>
+                    <option value="">France</option>
+                    <option value="">Germany</option>
+                </optgroup>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- Next Class: Table, id & classes, other misc tags -->
