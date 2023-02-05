@@ -1,0 +1,46 @@
+/* Aboreto */
+@font-face{
+    src: url('/fonts/Aboreto/Aboreto-Regular.ttf');
+    font-family: 'my favourite fonts';
+}
+
+/* Anton */
+@font-face{
+    src: url('/fonts/Anton/Anton-Regular.ttf');
+    font-family: Anton;
+}
+
+/* Fira Sans */
+@font-face{
+    src: url('/fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Thin.ttf');
+    font-family: "Fira Sans";
+    font-weight: 100;
+}
+@font-face{
+    src: url('/fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-Regular.ttf');
+    font-family: "Fira Sans";
+    font-weight: 400;
+}
+@font-face{
+    src: url('/fonts/Fira_Sans_Extra_Condensed/FiraSansExtraCondensed-ExtraBold.ttf');
+    font-family: "Fira Sans";
+    font-weight: 800;
+}
+
+/* Roboto Mono */
+@font-face {
+    src: url('/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
+    font-family: 'Roboto Mono';
+}
+
+/* Libre */
+@font-face {
+    src: url('fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf');
+    font-family: 'Libre';
+    font-weight: 400;
+}
+@font-face {
+    src: url('fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf');
+    font-family: 'Libre';
+    font-weight: 700;
+}
