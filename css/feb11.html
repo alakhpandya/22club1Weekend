@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        } */
+        /* 
+            Pixel is rigid (fixed) 
+            1960 px = 10 inch
+        */
+        /* html{
+            font-size: 10px;
+        } */
+        img{
+            /* width: 1500px;
+            height: 700px; */
+            /* width: 100vw;    100% of viewport width */
+            /* width: 50vw; */
+
+            /* height: 100vh; */
+            width: 100vw;
+        }
+
+        /* 
+            rem = root's em (font-size)
+            1 rem = 16px by default
+        */
+        /*         
+        #item1{
+            font-size: 32px;
+        }
+        #item2{
+            font-size: 2rem;
+        } 
+        */
+
+        /* 
+            em: 
+                when we give font-size in em, em = parent's font-size.
+                for everywhere else, em = font-size of the element itself.
+        */
+        #item1{
+            font-size: 10px;
+        }
+        #item2{
+            font-size: 15px;
+        }
+
+        .box p{
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+        /* 
+            for paragraph-1: 1em = 10px => 2em = 20px
+                line-height for para-1: 30px
+            for paragraph-2: 1em = 15px => 2em = 30px
+                line-height for para-2: 45px
+        */
+
+        #btn1{
+            font-size: 20px;
+            height: 2em;        /* 40px */
+        }
+        #btn2{
+            font-size: 30px;
+            height: 1em;        /* 30px */
+        }
+        #normal-text{
+            font-size: 30px;
+            line-height: 1.2em;
+        }
+    </style>
+    <body>
+        <h1>Hello!</h1>
+        <p>Hello!</p>
+        <!-- <img src="/images/pexels-pixabay-87009.jpg" alt=""> -->
+        <div class="box" id="item1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, ipsum asperiores vitae nam voluptate aliquam aperiam molestias molestiae, tempora necessitatibus minus ad aliquid assumenda.</p>
+        </div>
+        <!-- <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, ipsum asperiores vitae nam voluptate aliquam aperiam molestias molestiae, tempora necessitatibus minus ad aliquid assumenda.</p>  -->
+        <div class="box" id="item2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, ipsum asperiores vitae nam voluptate aliquam aperiam molestias molestiae, tempora necessitatibus minus ad aliquid assumenda.</p>
+        </div>
+        <!-- <p style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, ipsum asperiores vitae nam voluptate aliquam aperiam molestias molestiae, tempora necessitatibus minus ad aliquid assumenda.</p> -->
+
+        <button id="btn1">Button 1</button> 
+        <button id="btn2">Button 2</button>
+        <p id="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor sint soluta tempore! Mollitia et voluptas, aliquid corrupti esse, ut aut adipisci nam unde quam eligendi! Error ipsam velit eaque consequuntur in quis voluptates alias modi, dolore accusantium tempora perferendis unde aperiam cum ullam illo accusamus culpa iure corporis necessitatibus ratione perspiciatis doloremque magni saepe. Minus illo ipsa aspernatur obcaecati exercitationem, deleniti ea nam dolorum unde voluptates qui esse, eveniet et assumenda, excepturi aliquam corporis alias? Nemo saepe quae facilis quas a ipsam harum iure dolores mollitia rerum eveniet sit quidem quasi, optio culpa et voluptatem aperiam quam commodi. Laudantium?</p>
+    </body>
+</html>
+
+<!-- 
+    Next Class: Unit - %, colors, height, width & borders
+ -->
