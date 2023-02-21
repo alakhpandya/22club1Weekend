@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        text-decoration: none;
+        color: black;
+        /* color: red; */
+    }
+
+    #btn1{
+        background-color: greenyellow;
+        /* border-width: 2px;      default */
+        /* border-color: black;    default color = text color of the element */
+        /* border-style: solid; */
+
+        border: solid 1px red;
+    }
+    #btn2{
+        /* border-style: none; */
+        /* or */
+        border: none;
+        border-bottom: 1px red solid;
+    }
+    #btn3{
+        border-top: 3px solid red;
+        border-left: 2px solid rgb(162, 162, 0);
+        border-bottom: blue solid 2px;
+        border-right: solid green 2px;
+    }
+    #btn4{
+        background-color: greenyellow;
+        border-radius: 5px;
+    }
+    #btn5{
+        background-color: greenyellow;
+        border-radius: 10px;
+        /* border-radius: 100px; */
+    }
+    #btn6, #btn7, #btn8, #btn9{
+        height: 2em;
+        width: 5em;
+        background-color: greenyellow;
+        border-radius: 1em;
+    }
+    #btn6{
+        font-size: 2rem;
+    }
+    #btn7{
+        font-size: 80px;
+    }
+    #btn8{
+        font-size: 1.3rem;
+        border: none;
+    }
+    #btn10{
+        background-color: rgb(71, 72, 52);
+        color: #fff;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #btn10:hover{
+        background-color: #000;
+        color: #ddd;
+    }
+</style>
+<body>
+    <div><a href="#" id="btn1">Button 1</a></div> <br>
+    <div><button id="btn2">Button 2</button></div> <br>
+    <div><button id="btn3">Button 3</button></div> <br>
+    <div><button id="btn4">Button 4</button></div> <br>
+    <div><button id="btn5">Button 5</button></div> <br>
+    <div><button id="btn6">Button 6</button></div> <br>
+    <div><button id="btn7">Button 7</button></div> <br>
+    <div><button id="btn8">Button 8</button></div> <br>
+    <div><button id="btn9">Button 9</button></div> <br>
+    <div><button id="btn10">B-10</button></div>
+</body>
+</html>
+
+<!-- 
+    more about border-radius
+ -->
