@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* before & after: Pseudo Elements */
+    h1{
+        font-family: cursive;
+    }
+
+    h1::before{
+        content: "I";
+        background-color: orangered;
+        display: block;
+    }
+    h1::after{
+        content: "India";
+        background-color: green;
+        display: block;
+    }
+    
+    
+     /*
+    #i{
+        background-color: orangered;
+    }
+    #india{
+        background-color: green;
+    } */
+    /* 
+    #hello{
+        background-color: violet;
+        display: inline;
+    }
+    #world{
+        background-color: brown;
+        color: white;
+        display: block;
+    } */
+
+    /* #title::before{
+        background-color: orange;
+        content: "You";
+    } */
+</style>
+<body>
+    <!-- <div id="hello">Hello</div><span id="world">World!</span> -->
+    <h1 id="title">Love</h1>
+    <!-- <h1><span id="i">I</span>Love<span id="india">India</span></h1> -->
+
+    <!-- Before & After don't work with empty tags like:
+    <img src="" alt="">
+    <input type="text">
+    <br>
+    <hr>
+    -->
+</body>
+</html>
