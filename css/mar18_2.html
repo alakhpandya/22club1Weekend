@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        border: solid;
+        width: 100px;
+    }
+
+    #item1 {
+        margin-top: 30px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    #item3 {
+        /* Equal margin all the sides */
+        margin: 20px;
+    }
+
+    #item5 {
+        /* margin: top-bottom left-right */
+        margin: 20px 2rem;
+    }
+
+    #item7 {
+        /* margin: clockwise; margin: top right bottom left; */
+        margin: 10px 20px 30px 60px;
+    }
+
+    #item9 {
+        /* margin: top left-rigth bottom */
+        margin: 10px 20px 30px;
+    }
+
+    #item10 {
+        /* Margins overlap only between two block elements */
+        /* margin-top: 30px; */
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        /* margin-left: auto;
+        margin-right: auto; */
+
+        /* margin: auto; */
+        /* margin: 20px auto; */
+        margin: 40px auto 20px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    #btn1 {
+        /* margin-top: 20px; */
+        margin-right: 50px;
+    }
+
+    #btn2 {
+        /* Margins do not overlap in in-line elements */
+        margin-left: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="item1">Box1</div>
+        <div class="box" id="item2">Box2</div>
+        <div class="box" id="item3">Box3</div>
+        <div class="box" id="item4">Box4</div>
+        <div class="box" id="item5">Box5</div>
+        <div class="box" id="item6">Box6</div>
+        <div class="box" id="item7">Box7</div>
+        <div class="box" id="item8">Box8</div>
+        <div class="box" id="item9">Box9</div>
+        <div class="box" id="item10">Box10</div>
+
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+    </div>
+</body>
+
+</html>
+<!-- 
+    Next Class: Visualizing Margins & Overlapping Margins, Padding
+ -->

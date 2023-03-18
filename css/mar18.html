@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        line-height: 1.7em;
+        font-size: 1.3rem;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        position: relative;
+    }
+    a:hover::after{
+        content: attr(data-message);
+        background-color: black;
+        color: antiquewhite;
+        padding: 0 1.5rem;
+        font-size: 0.9rem;
+        border-radius: 1.5rem;
+        position: absolute;
+        white-space: nowrap;
+        bottom: 110%;
+        left: 30px;
+    }
+    /* #twitter-link:hover::after{
+        content: "Follow us on twitter";
+    } */
+    .form-container{
+        text-align: center;
+    }
+    .star{
+        color: red;
+    }
+
+    .req::after{
+        content: " *";
+        color: red;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, dolore soluta?</h1>
+    <p>Lorem ipsum dolor sit amet consectetur <a width="500px" data-message="Like our facebook page" href="#">adipisicing elit.</a> Quis cumque sed doloribus. Nobis facilis, harum quos quisquam at suscipit quae mollitia aliquid eligendi doloribus tenetur maxime deleniti dolorum odio beatae odit culpa repellendus quam labore blanditiis assumenda delectus asperiores autem sed. Pariatur maxime modi excepturi, quaerat cupiditate qui aspernatur odit ullam sit, asperiores corrupti soluta inventore quam iure provident, consequatur facilis ipsam. Assumenda est reprehenderit rem doloribus velit libero consectetur provident quod quis, vero rerum recusandae omnis iure molestiae temporibus accusantium at ipsa tenetur, ipsam illo tempora, culpa modi! Vel dolores, aspernatur nihil modi reprehenderit impedit, doloremque odit veritatis minus accusamus, <a data-message="Follow us on twitter" id="twitter-link" href="#">nisi hic?</a> Soluta non enim qui odit et possimus laudantium id eius exercitationem! Repellendus neque et soluta tenetur sequi consequuntur tempora fugiat repellat eum omnis quasi quam suscipit laborum cupiditate, mollitia recusandae hic unde eveniet possimus ut sunt. Quam reprehenderit voluptatibus facere fugiat, perspiciatis eveniet iure voluptatum tenetur cum ab beatae quasi molestias provident sunt neque placeat odit? Soluta, porro quisquam molestias dolorem eveniet unde perferendis neque, adipisci quia <a data-message="Connect with us on linked-in" href="#">vero voluptatem</a> praesentium. Vitae, quisquam eveniet. Ipsa, perspiciatis amet? Eius quas inventore dignissimos beatae, odio minima nihil facilis molestias unde eos nulla libero laboriosam repellat quia esse deserunt sed suscipit cumque magni voluptates neque recusandae quidem sit saepe. Libero ducimus placeat at quae. Itaque aliquid incidunt modi ut aperiam molestiae, voluptates inventore ullam odio cumque laborum reiciendis, dolorum a ipsam corrupti omnis maiores nesciunt hic. Voluptatibus eum odio animi sapiente quas molestias. Quod sint repudiandae, magnam, aut sit sapiente dolore est officia illo in soluta numquam modi perferendis cumque consectetur nihil deleniti eius laboriosam rerum! Fugit excepturi facere, corporis magni sequi perferendis, assumenda inventore dolorem repellat hic itaque, explicabo officia maxime! Iste sit harum quod officiis. <a data-message="Subscribe our youtube channel" href="#">Optio quam</a> quia accusantium eligendi reiciendis totam suscipit ea, ipsum architecto, dolorum, accusamus repellat!</p>
+
+    <div class="form-container">
+        <form action="">
+            <div>
+                <!-- <label for="">First Name: <span class="star">*</span></label> -->
+                <label class="req" for="">First Name:</label>
+                <input type="text">
+            </div> <br>
+            <div>
+                <label for="">Middle Name:</label>
+                <input type="text">
+            </div> <br>
+            <div>
+                <label class="req" for="">Last Name:</label>
+                <input type="text">
+            </div> <br>
+            <div>
+                <label class="req" for="">Email:</label>
+                <input type="email" name="" id="">
+            </div> <br>
+            <div>
+                <label for="">Mobile No:</label>
+                <input type="tel" name="" id="">
+            </div> <br>
+            <div>
+                <label for="">Date Of Birth:</label>
+                <input type="date" name="" id="">
+            </div> <br>
+            <div>
+                <label class="req" for="">Password:</label>
+                <input type="password" name="" id="">
+            </div> <br>
+            <div>
+                <label class="req" for="">Confirm Password:</label>
+                <input type="password" name="" id="">
+            </div> <br>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            <br>
+        </form>
+        <br>
+    </div>
+    <br> <br>
+</body>
+</html>
