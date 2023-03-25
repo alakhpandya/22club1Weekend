@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        margin-bottom: 2.5rem;
+    }
+    a{
+        text-decoration: none;
+        border: solid;
+    }
+    #link1{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    #link2{
+        /* Equal padding in all directions */
+        padding: 20px;
+    }
+    #link3{
+        /* padding: top-bottom left-right */
+        padding: 10px 20px;
+    }
+    #link4{
+        /* clock-wise padding */
+        padding: 10px 20px 30px 40px;
+    }
+    #link5{
+        /* padding: top left-right bottom */
+        padding: 10px 20px 30px;
+    }
+    .boxes{
+        border: solid;
+        width: 300px;
+        /* text-align: center; */
+        margin: 1rem auto;
+        font-size: 1.3rem;
+        /* box-sizing: content-box;    default */
+        box-sizing: border-box;
+    }
+    #box2{
+        /* padding: 10px 30px; */
+        /* padding: 1.75rem; */
+        /* font-size: 1.5rem; */
+        /* padding: 1.5em; */
+        padding: 10vw;
+        /* width: 240px; */
+    }
+    #box3{
+        border: solid 15px pink;
+        /* width: 274px; */
+    }
+
+    /* CSS Reset */
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Getting things horizontally in center */
+    /* 
+        text/inline elements- text-align: center
+        block elements- give width & then apply margin: auto
+    */
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Learning Margin, Padding & Box-sizing</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis cupiditate vero modi, eligendi magni repudiandae, beatae animi mollitia illum cum voluptas impedit iusto? Dicta facilis, quo quas delectus est autem consequatur expedita nam exercitationem at, voluptatibus ipsum natus, deserunt suscipit consequuntur tempore nulla? Consequuntur rem cumque aliquam harum vel necessitatibus ad sed, odio dolorum culpa non quod minima fuga consectetur.</p>
+    <button>Button 1</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quaerat?</p>
+    <div><a id="link1" href="#">Lorem, ipsum.</a></div>
+    <div><a id="link2" href="#">Fugiat, voluptatem!</a></div>
+    <div><a id="link3" href="#">Labore, eius.</a></div>
+    <div><a id="link4" href="#">Molestias, enim?</a></div>
+    <div><a id="link5" href="#">Asperiores, vel!</a></div>
+    <div><a id="link6" href="#">Rerum, doloremque?</a></div>
+    <div class="boxes" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hellow how are you natus aspernatur hic alias sequi tempora commodimmmmm dolorem sit cum?</div>
+    <div class="boxes" id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hellow how are you natus aspernatur hic alias sequi tempora commodimmmmm dolorem sit cum?</div>
+    <div class="boxes" id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hellow how are you natus aspernatur hic alias sequi tempora commodimmmmm dolorem sit cum?</div>
+    
+</body>
+</html>

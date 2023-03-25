@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Zilla+Slab&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Zilla Slab', serif;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    color: darkolivegreen;
+    border: solid 1px white;
+    font-size: 1.4rem;
+    padding: 0.3em 1em;
+    border-radius: 7px;
+    margin-right: 1rem;
+    background-color: white;
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.title{
+    font-family: 'Julius Sans One', sans-serif;
+}
+.primary-title{
+    font-size: 2rem;
+}
+.secondary-title{
+    font-size: 1.7rem;
+}
+.normal-text{
+    font-size: 1.3rem;
+    margin: 1rem 0 2rem;
+    line-height: 1.5em;
+}
+section{
+    padding: 3rem 10rem;
+}
+
+#top-section{
+    background-color: darkolivegreen;
+}
