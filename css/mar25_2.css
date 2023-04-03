@@ -26,9 +26,10 @@ a{
     background-color: transparent;
     color: white;
 }
-
+ 
 .title{
     font-family: 'Julius Sans One', sans-serif;
+    /* border: solid white; */
 }
 .primary-title{
     font-size: 2rem;
@@ -44,7 +45,41 @@ a{
 section{
     padding: 3rem 10rem;
 }
-
+p{
+    /* border: solid white; */
+}
+.title-section{
+    /* text-align: left; */
+    text-align: justify;
+}
 #top-section{
     background-color: darkolivegreen;
+    text-align: center;
 }
+#middle-section{
+    text-align: right;
+}
+#last-section{
+    position: relative;
+    text-align: justify;
+}
+#last-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/images/buildings-g30e41c6a4_1920.jpg') center/100vw no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
