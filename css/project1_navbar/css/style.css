@@ -9,6 +9,8 @@
 body{
     background-color: black;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 100vh;
 }
 a{
     text-decoration: none;
@@ -70,8 +72,39 @@ nav::after{
 }
 
 
-
+/* main{
+    
+} */
 .banner{
+    /* border: solid white; */
     font-family: 'Playfair Display', serif;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.banner-text{
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+.btn{
+    background-color: white;
+    color: chocolate;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    border: solid white;
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
 }
