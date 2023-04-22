@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 
     <title>Document</title>
 </head>
+
 <body>
     <nav>
         <a href="index.html">
@@ -24,24 +28,40 @@
             <li><a href="#" class="nav-links trailing-plus">Products &nbsp;</a></li>
             <li><a href="#" class="nav-links trailing-plus">Blog &nbsp;</a></li>
             <li><a href="#" class="nav-links">Contacts</a></li>
+            <div class="nav-hidden-menu">
+                <li><a class="user-options" href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                <li><a class="user-options" href="#"><i class="fa-regular fa-user"></i> Sign In</a></li>
+                <li><a class="user-options" href="#">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    Cart
+                </a></li>
+            </div>
         </ul>
-        <div>
+
+        <div class="nav-right">
+            <a class="user-options browse-btn" href="#"
+                onclick="document.querySelector('.nav-menu').classList.toggle('nav-verticle')">Browse</a>
             <a class="user-options" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a class="user-options" href="#"><i class="fa-regular fa-user"></i></a>
             <a class="user-options" href="#">
                 <i class="fa-solid fa-bag-shopping"></i>
-                0</a>
+                0
+            </a>
         </div>
+        <i class="fa-solid fa-bars bar-icon"
+            onclick="document.querySelector('.nav-menu').classList.toggle('nav-verticle')"></i>
     </nav>
     <main>
         <div class="banner">
             <p class="color-white banner-title">Author's Delicious Sweets</p>
             <p class="color-gold banner-title">and Chocolates</p>
-            <p class="color-white banner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ab officiis quod deserunt impedit fuga, tenetur rerum! Eius, delectus voluptatibus.</p>
+            <p class="color-white banner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At ab officiis
+                quod deserunt impedit fuga, tenetur rerum! Eius, delectus voluptatibus.</p>
             <a class="btn" href="#">Read More
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </main>
-</body> 
+</body>
+
 </html>
