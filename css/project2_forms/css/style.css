@@ -1,0 +1,70 @@
+/* Google fonts CSS */
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Tajawal:wght@200;300;400;500&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root{
+    /* colors */
+    --black: #212A3E;
+    --dark-col-1: #394867;
+    --light-col-1: #9BA4B5;
+    --white: #F1F6F9;
+
+    /* margin/padding */
+    --normal-padding: 0 20px;
+
+    /* fonts */
+    --title-fonts: 'Castoro Titling', cursive;
+    --normal-fonts: 'Tajawal', sans-serif;
+    --icon-font-size: 1.5rem;
+}
+
+
+/* Global Styling */
+body{
+    background-color: var(--light-col-1);
+    font-family: var(--normal-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/* Navbar */
+.navbar{
+    background-color: var(--black);
+    color: var(--white);
+    height: 6rem;
+}
+.upper-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    padding: var(--normal-padding);
+}
+
+.nav-logo{
+    height: 4.5rem;
+}
+
+.bar-icon{
+    font-size: var(--icon-font-size);
+}
+
+.nav-toggle{
+    background-color: var(--dark-col-1);
+    padding: var(--normal-padding);
+}
+.nav-links{
+    color: var(--white);
+}
