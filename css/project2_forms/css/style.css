@@ -13,6 +13,7 @@
     /* colors */
     --black: #212A3E;
     --dark-col-1: #394867;
+    --dark-col-2: #009BF9;
     --light-col-1: #9BA4B5;
     /* --light-col-2: #D7A31A; */
     --light-col-2: #F9F871;
@@ -42,7 +43,9 @@ a{
 ul{
     list-style-type: none;
 }
-
+.login-signup-links{
+    color: var(--dark-col-2);
+}
 
 /* ---------------------------- Navbar ---------------------------- */
 
@@ -133,12 +136,23 @@ ul{
     height: 100%;
 }
 
+
 /* ---------------------------- Login/Signup Form ---------------------------- */
 
 .form-container{
     background-color: var(--white);
     border-radius: 10px;
     width: 98%;
+    max-width: 350px;
+    /* 
+    Max width understanding:
+    on credit card, 10% discount upto Rs.2000/-
+    shopping    discount
+    10000       1000
+    15000       1500
+    20000       2000
+    100000      2000
+    */
     margin: 3rem auto;
     padding: var(--broad-padding) var(--narrow-padding) var(--narrow-padding);
 }
@@ -166,8 +180,9 @@ ul{
     /* border: solid red; */
     width: 90%;
     margin: 0 auto 1.5rem;
+    position: relative;
 }
-.input-box input{
+.input-box input, .input-box select{
     width: 100%;
     height: 2.5rem;
     background-color: var(--white);
@@ -176,12 +191,67 @@ ul{
     outline: none;
     padding-left: 20px;
 }
-input:focus{
+input:focus, input:valid,
+select:focus, select:valid{
     border: 1px solid var(--black);
     border-radius: 10px;
 }
 
+.input-box label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box input:focus + label, .input-box input:valid + label,
+.input-box select:focus + label, .input-box select:valid + label{
+    top: 0;
+    left: 7px;
+    transition: 0.2s;
+    background-color: var(--white);
+}
+
+.submit-box{
+    /* border: red solid; */
+    width: 50%;
+    margin: 1rem auto;
+}
+.login-signup-submit-btn{
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.3rem;
+    border: solid var(--black) 1px;
+    cursor: pointer;
+}
+.login-signup-submit-btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+.remember-me-forget-password-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-box{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.signup-large-screen .signup-partitions{
+    width: 100%;
+}
+
 /* ---------------------------- Media Queries ---------------------------- */
+@media (min-width: 375px){
+    .remember-me-forget-password-box{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 @media (min-width: 540px){
     .navbar{
         display: flex;
@@ -200,5 +270,11 @@ input:focus{
     }
     .nav-toggle li:nth-child(1){
         margin-bottom: 0;
+    }
+    .signup-form-container{
+        max-width: 600px;
+    }
+    .signup-large-screen{
+        display: flex;
     }
 }
