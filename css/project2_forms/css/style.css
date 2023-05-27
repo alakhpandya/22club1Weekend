@@ -1,5 +1,6 @@
 /* Google fonts CSS */
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Tajawal:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Ubuntu:wght@400;500&display=swap');
 
 /* ---------------------------- CSS Reset ---------------------------- */
 *{
@@ -11,13 +12,20 @@
 /* Variables */
 :root{
     /* colors */
-    --black: #212A3E;
+    --black: #11009E;
+    /* --dark-col-1: #11009E; */
+    --dark-col-2: #4942E4;
+    --light-col-1: #8696FE;
+    /* --light-col-2: #D7A31A; */
+    --light-col-2: #C4B0FF;
+    --white: #FFF;
+
+    /* --black: #212A3E;
     --dark-col-1: #394867;
     --dark-col-2: #009BF9;
     --light-col-1: #9BA4B5;
-    /* --light-col-2: #D7A31A; */
     --light-col-2: #F9F871;
-    --white: #E3F0FF;
+    --white: #E3F0FF; */
 
     /* margin/padding */
     --normal-padding: 1rem;
@@ -25,8 +33,8 @@
     --broad-padding: 1.5rem;
 
     /* fonts */
-    --title-fonts: 'Castoro Titling', cursive;
-    --normal-fonts: 'Tajawal', sans-serif;
+    --title-fonts: 'Oswald', sans-serif;;
+    --normal-fonts: 'Ubuntu', sans-serif;
     --icon-font-size: 1.5rem;
 }
 
@@ -206,7 +214,8 @@ select:focus, select:valid{
 
 .input-box input:focus + label, .input-box input:valid + label,
 .input-box select:focus + label, .input-box select:valid + label{
-    top: 0;
+    bottom: 0;
+    transform: translateY(50%);
     left: 7px;
     transition: 0.2s;
     background-color: var(--white);
