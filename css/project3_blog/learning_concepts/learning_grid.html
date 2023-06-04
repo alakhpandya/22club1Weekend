@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(215, 234, 251);
+        padding: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.25em;
+    }
+
+    .container {
+        display: grid;
+        gap: 2rem;
+        /* grid-template-columns: 600px 300px 300px 300px; */
+        /* grid-template-columns: 300px 300px 300px 300px; */
+        /* grid-template-columns: 25vw 25vw 25vw 25vw; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(4, 300px); */
+        /* grid-template-columns: repeat(4, 1fr); */
+    }
+
+    .template {
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .personal-info{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .circle {
+        border: solid black;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .designation {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+    }
+
+    .headline {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.25em;
+        margin: 1rem 0 0.5rem;
+    }
+    .normal-text{
+        font-size: 1.2rem;
+        line-height: 1.25em;
+    }
+
+    #template1,
+    #template2,
+    #template5 {
+        color: white;
+    }
+
+    #template3,
+    #template4 {
+        background-color: white;
+    }
+
+    #template1 {
+        background-color: blueviolet;
+    }
+
+    #template2 {
+        background-color: darkslategrey;
+    }
+
+    #template5 {
+        background-color: #333;
+    }
+
+    @media (min-width: 750px){
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #template1, #template5 {
+            grid-column: span 2;
+        }
+        #template3{
+            grid-row: span 2;
+        }
+    }
+    @media (min-width: 1100px){
+        .container{
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="template" id="template1">
+            <div class="personal-info">
+                <div class="circle"></div>
+                <div class="name-box">
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="designation">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="headline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam a unde laudantium
+                dicta laboriosam, nostrum voluptatum omnis ducimus ex.</p>
+            <p class="normal-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae atque, earum sint
+                unde, officiis ipsam corrupti numquam maiores alias eos cum harum ratione aut! Distinctio quis facere
+                deserunt quos alias soluta quas unde accusantium perspiciatis molestiae, saepe voluptas accusamus fugiat
+                debitis molestias laborum hic inventore! Sapiente beatae aliquam quidem ipsam!</p>
+        </div>
+        <div class="template" id="template2">
+            <div class="personal-info">
+                <div class="circle"></div>
+                <div class="name-box">
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="designation">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="headline">Enim dolor quis explicabo, aperiam dolores.</p>
+            <p class="normal-text">Veniam illum debitis qui nisi nihil quod, fugiat fugit optio vitae quisquam commodi
+                explicabo, atque maxime suscipit. Omnis, excepturi? Illum saepe modi?</p>
+        </div>
+        <div class="template" id="template3">
+            <div class="personal-info">
+                <div class="circle"></div>
+                <div class="name-box">
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="designation">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="headline">Nobis error aliquid, dolorum quibusdam corrupti recusandae!</p>
+            <p class="normal-text">Inventore eum rem perferendis, officia tenetur neque perspiciatis eos odio doloribus
+                incidunt hic, delectus excepturi voluptas veritatis vitae blanditiis magni. Quod quisquam harum fugiat
+                amet, ipsam explicabo fugit iusto, odio, voluptate inventore dicta atque soluta! Tenetur voluptas iure
+                est amet deleniti, velit ducimus voluptatibus incidunt ipsam, ab dolores, accusamus nobis aliquid.
+                Voluptas ut, ipsam itaque fugit quidem blanditiis nobis repellendus voluptates dignissimos accusantium
+                quae corrupti fuga esse facere officiis quisquam corporis autem magni quos perferendis, id voluptatum
+                amet explicabo saepe. Aperiam id dolorem autem ex ea quidem dignissimos ratione repudiandae.</p>
+        </div>
+        <div class="template" id="template4">
+            <div class="personal-info">
+                <div class="circle"></div>
+                <div class="name-box">
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="designation">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="headline">Voluptates quo corporis molestias, natus beatae ratione!</p>
+            <p class="normal-text">Obcaecati, omnis praesentium modi impedit maiores molestias odio dolore animi magni
+                eveniet aut. Enim id corrupti labore.</p>
+        </div>
+        <div class="template" id="template5">
+            <div class="personal-info">
+                <div class="circle"></div>
+                <div class="name-box">
+                    <h1 class="name">Lorem, ipsum.</h1>
+                    <p class="designation">Lorem, ipsum.</p>
+                </div>
+            </div>
+            <p class="headline">Molestias recusandae quos aliquid, assumenda at molestiae magnam cum numquam quidem
+                repudiandae vero repellat iure.</p>
+            <p class="normal-text">Aliquid nulla voluptatum reiciendis excepturi numquam corporis, est sint officiis, ad
+                repudiandae vero fugiat autem quibusdam molestiae tenetur illo reprehenderit quidem dignissimos itaque.
+                Animi commodi laudantium adipisci, consequatur illum facere optio accusantium culpa.</p>
+        </div>
+    </div>
+</body>
+
+</html>

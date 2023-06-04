@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body{
         height: 100vh;
         display: flex;
@@ -14,8 +19,8 @@
         align-items: center;
     }
     .boxes{
-        height: 200px;
-        width: 150px;
+        height: 300px;
+        width: 250px;
         /* border: solid red; */
 
         /* box-shadow: x-offset y-offset */
@@ -39,12 +44,35 @@
         /* box-shadow: x-offset y-offset blur-radius spread-radius color */
         /* box-shadow: 0px 0px 15px 5px orange; */
         box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+        
+        
+        text-align: center;
+        font-family: cursive;
+        font-weight: 600;
+        font-size: 1.8rem;
+        padding-top: 6.5rem;
+
+        /* text-shadow: x-offset y-offset blur-radius color; */
+        /* text-shadow: 1px 1px red;
+        color: navy; */
+
+        /* text-shadow: 0px 0px 5px black;
+        color: skyblue; */
+        
+        /* text-shadow: 0px 0px 5px red, 0px 0px 15px blue; */
+        
+        text-shadow: 1px 1px 10px red, -1px -1px 10px blue;
+
+        color: white;
+
 
     }
 
 </style>
 <body>
-    <div class="boxes" id="box1"></div>
+    <div class="boxes" id="box1">
+        How was the vacation!
+    </div>
 </body>
 </html>
 
