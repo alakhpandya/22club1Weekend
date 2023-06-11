@@ -1,0 +1,7 @@
+abel: navbar, carousel text, blog post sticker, popular post sticker, popular tags
+
+lexend: logo, banner title, sidebar title, blog post text, pagination, Entire footer
+
+livvic: buttons
+
+Anton: blog post headline, popular post headline

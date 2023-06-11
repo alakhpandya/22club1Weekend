@@ -8,8 +8,183 @@ font-family: 'Lexend Deca', sans-serif;
 font-family: 'Livvic', sans-serif;
 */
 
+/* --------------------------------- CSS Reset --------------------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* --------------------------------- Variables --------------------------------- */
+:root{
+    /* Fonts */
+    --primaryFonts: 'Abel', sans-serif;
+    --titleFonts: 'Lexend Deca', sans-serif;
+    --btnFonts: 'Livvic', sans-serif;
+    --headlineFonts: 'Anton', sans-serif;
+
+    /* Font Colors */
+    --textBlack: #000;
+    --textDark: #3f4954;
+    --textLight: rgba(104, 102, 102, 0.855);
+
+    /* Site Colors */
+    --navHover: #104f55;
+    --btnGradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --footerBgColor: #0f0f0f;
+    --white: white;
+}
+
+
+/* --------------------------------- Global Classes/Styling --------------------------------- */
+body{
+    font-family: var(--primaryFonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    background: var(--btnGradient);
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-family: var(--btnFonts);
+    color: var(--textBlack);
+}
+.rounded-btn{
+    border-radius: 1.8rem;
+}
+
+/* --------------------------------- Navbar --------------------------------- */
+nav{
+    padding: 0 30px;
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.show-nav{
+    height: 31rem;
+}
+
+.nav-upper{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    color: var(--textDark);
+}
+.nav-logo{
+    font-family: var(--titleFonts);
+    color: var(--textDark);
+}
+.bar-icon{
+    cursor: pointer;
+}
+
+.nav-menu{
+    padding: 0 3.5rem;
+}
+.nav-menu li{
+    padding: 1.5rem 0;
+}
+.nav-menu li:hover{
+    background-color: var(--navHover);
+}
+.nav-menu li:hover .nav-links{
+    color: var(--white);
+}
+.nav-links{
+    font-size: 1.1rem;
+    color: var(--textDark);
+}
+
+.social{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.social-icons{
+    color: var(--textDark);
+    font-size: 1.2rem;
+}
+
+/* --------------------------------- Banner --------------------------------- */
+.banner{
+    height: 45rem;
+    background: url('/assets/pexels-deva-darshan.jpg') no-repeat top left/1350px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: var(--white);
+}
+
+#wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1350px;
+}
+.banner h2{
+    margin-top: 10rem;
+}
+.banner h4{
+    font-family: var(--titleFonts);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.banner-btn:hover{
+    border: solid 1px var(--white);
+    background: transparent;
+    color: var(--white);
+}
+
+/* --------------------------------- Media Queries --------------------------------- */
+@media (min-width: 750px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        /* border: solid; */
+        padding: 0;
+        display: flex;
+        height: 100%;
+    }
+    .nav-menu li{
+        /* border: solid maroon; */
+        padding: 1.8rem 1rem 0;
+    }
+    .social{
+        margin-top: 0;
+    }
+}
+
+
+
+@media (min-width: 1350px){
+    .banner{
+        background-size: 1800px;
+        height: 50rem;
+    }
+    
+    #wave{
+        width: 1800px;
+    }
+}
+
+@media (min-width: 1800px){
+    .banner{
+        background-size: 100%;
+        height: 60rem;
+    }
+    #wave{
+        width: 100%;
+    }
 }
