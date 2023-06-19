@@ -141,6 +141,64 @@ nav{
     color: var(--white);
 }
 
+/* --------------------------------- Carousel --------------------------------- */
+.carousel-container{
+    margin-top: 5rem;
+    position: relative;
+    background: url('/assets/Abract01.png') no-repeat top right/65%;
+}
+.carousel-item{
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+.carousel-img{
+    height: 250px;
+}
+.carousel-text{
+    padding: 1.5rem 5px 1rem;
+}
+.carousel-title{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.carousel-item p{
+    margin-top: 2rem;
+}
+
+.owl-nav{
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+.arrow-icon{
+    font-size: 1.75rem;
+    color: var(--textDark);
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: transparent;
+}
+.arrow-icon:hover{
+    color: var(--textLight);
+}
+
+/* --------------------------------- Main Section --------------------------------- */
+main{
+    display: grid;
+}
+.blog-post-container{
+    height: 500px;
+    background-color: lightgreen;
+}
+aside{
+    height: 500px;
+    background-color: maroon;
+}
+
 /* --------------------------------- Media Queries --------------------------------- */
 @media (min-width: 750px){
     nav{
@@ -164,11 +222,15 @@ nav{
     .social{
         margin-top: 0;
     }
+    main{
+        grid-template-columns: 70% 30%;
+    }
 }
 
-
-
 @media (min-width: 1350px){
+    .carousel-item{
+        width: 75%;
+    }
     .banner{
         background-size: 1800px;
         height: 50rem;
