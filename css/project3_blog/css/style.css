@@ -191,12 +191,121 @@ main{
     display: grid;
 }
 .blog-post-container{
-    height: 500px;
-    background-color: lightgreen;
+    margin: 5rem 0;
+    padding: 3rem 0;
 }
+.blog-post{
+    width: 70%;
+    margin: auto;
+}
+.blog-img-btn-container{
+    position:relative;
+}
+.blog-img-container{
+    overflow: hidden;
+}
+.blog-post-img{
+    width: 100%;
+    transition: 0.3s;
+}
+.blog-post-img:hover{
+    scale: 1.2;
+}
+.blog-img-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+}
+.blog-headline{
+    font-family: var(--headlineFonts);
+    font-size: 2rem;
+    color: var(--textDark);
+    margin: 2rem 0 1rem;
+}
+.blog-text{
+    font-family: var(--titleFonts);
+    color: var(--textLight);
+    margin-bottom: 3rem;
+}
+.separator{
+    margin: 3rem 0;
+}
+/* --------------------------------- Sidebar --------------------------------- */
+
 aside{
     height: 500px;
-    background-color: maroon;
+    margin: 5rem 0;
+    padding: 3rem 0;
+}
+.sidebar-section{
+    margin-bottom: 10rem;
+}
+.sidebar-title{
+    font-family: var(--titleFonts);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.sidebar-content{
+    width: 80%;
+    margin: auto;
+}
+
+/* --------------------------------- Sidebar: Category --------------------------------- */
+
+.category-btn{
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.category-btn a{
+    color: var(--textBlack);
+}
+
+/* --------------------------------- Sidebar: Popular Posts --------------------------------- */
+.popular-post{
+    margin-bottom: 5rem;
+}
+.popular-post-img{
+    width: 100%;
+}
+.popular-post-headline{
+    font-family: var(--headlineFonts);
+    color: var(--textDark);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* --------------------------------- Sidebar: Newsletter --------------------------------- */
+.form-input-box{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.form-input-box input{
+    height: 3rem;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+.newsletter-btn{
+    border: none;
+    width: 80%;
+}
+
+/* --------------------------------- Sidebar: Popular Tags --------------------------------- */
+.popular-tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.popular-tag{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 /* --------------------------------- Media Queries --------------------------------- */
